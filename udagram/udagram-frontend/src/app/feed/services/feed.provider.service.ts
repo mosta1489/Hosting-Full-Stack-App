@@ -4,9 +4,7 @@ import { BehaviorSubject } from 'rxjs';
 
 import { ApiService } from '../../api/api.service';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({providedIn: 'root'})
 export class FeedProviderService {
   currentFeed$: BehaviorSubject<FeedItem[]> = new BehaviorSubject<FeedItem[]>([]);
 
